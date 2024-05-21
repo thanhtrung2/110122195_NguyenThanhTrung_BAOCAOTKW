@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Landing Page - Chủ đề Start Bootstrap</title>
+    <!-- Biểu tượng trang web -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Biểu tượng Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
+        type="text/css" />
+    <!-- Font của Google -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- CSS chính của theme (bao gồm Bootstrap) -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .video-container {
+    display: flex;
+    justify-content: space-around; /* This aligns the videos horizontally with space between them */
+    align-items: center; /* This aligns the videos vertically in the center */
+    flex-wrap: nowrap; /* This ensures the videos stay in one row */
+}
+
+.video {
+    margin: 10px; /* Optional: Adds some space around each video */
+}
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container">
+            <img src="assets/img/logo.png" class="logo" style="width: 50px; height: auto;">
+            <a class="navbar-brand" href="#!">REVIEW CHIP CPU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="tham_gia/index.html">Tham Gia</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Thanh điều hướng -->
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+           
+
+        </div>
+    </nav>
+    <header class="masthead">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="text-center text-white">
+                        <!-- Tiêu đề trang -->
+                        <h1 class="mb-5">Các Loại Chip CPU Phổ Biến Hiện Nay" </h1>
+                        <!-- Form đăng ký -->
+                        <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Ô nhập địa chỉ email -->
+                            <div class="row">
+                                <div class="col">
+                                    <input class="form-control form-control-lg" id="emailAddress" type="email"
+                                        placeholder="Địa chỉ Email" data-sb-validations="required,email" />
+                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">
+                                        Địa chỉ Email là bắt buộc.</div>
+                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Địa
+                                        chỉ Email không hợp lệ.</div>
+                                </div>
+                                <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton"
+                                        type="submit">Gửi</button></div>
+                            </div>
+                            <!-- Thông báo thành công -->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Gửi biểu mẫu thành công!</div>
+                                    <p>Để kích hoạt biểu mẫu này, hãy đăng ký tại</p>
+                                    <a class="text-white"
+                                        href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <!-- Thông báo lỗi -->
+                            <div class="d-none" id="submitErrorMessage">
+                                <div class="text-center text-danger mb-3">Gửi tin nhắn lỗi!</div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Biểu tượng Grid -->
+    <section class="features-icons bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                        <div class="features-icons-icon d-flex"><i class="bi-window m-auto text-primary"></i></div>
+                        <h3>Tính năng của các dòng chip CPU đầy đủ</h3>
+                        <p class="lead mb-0">Chủ đề này sẽ hiển thị các tính năng thông số của từng dòng Chip!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                        <div class="features-icons-icon d-flex"><i class="bi-layers m-auto text-primary"></i></div>
+                        <h3>Sẵn sàng với các công nghệ hiện đại mới</h3>
+                        <p class="lead mb-0">Hiển thị phiên bản mới nhất của các dòng Chip!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                        <div class="features-icons-icon d-flex"><i class="bi-terminal m-auto text-primary"></i></div>
+                        <h3>Dễ xem và so sánh </h3>
+                        <p class="lead mb-0">Sẵn sàng sử dụng với nhu cầu sử dụng và tùy chỉnh về sản phẩm của bạn!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trình diễn hình ảnh -->
+    <section class="showcase">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img"
+                    style="background-image: url('assets/img/bg-showcase-1.jpg')"></div>
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <h2>CPU INTEL CORE I9</h2>
+                    <p class="lead mb-0">là một trong những nhà sản xuất CPU hàng đầu thế giới, sản xuất CPU cho laptop
+                        từ dòng Core i3, i5, i7, i9 và Xeon.!</p>
+                    <p class="lead mb-0"><strong>CPU Intel Core i9</strong> là dòng CPU cao cấp nhất trong các sản phẩm
+                        CPU dành cho máy tính để bàn và laptop của Intel. CPU Intel Core i9 có nhiều phiên bản khác nhau
+                        với tốc độ xung nhịp và số lõi khác nhau, tuy nhiên đều sử dụng kiến trúc xử lý 64-bit và được
+                        sản xuất trên tiến trình sản xuất 14nm hoặc 10nm. CPU Intel Core i9 được thiết kế dành cho các
+                        nhu cầu đa nhiệm, xử lý đồ họa, chơi game và các tác vụ yêu cầu tính toán nhanh và hiệu quả cao.
+                        Các CPU Intel Core i9 thường được sử dụng trong các máy tính cao cấp, máy trạm và máy chủ.</p>
+                    <h3 style="color: rgb(245, 11, 11);">15.899.000₫</h3>
+                    <a class="btn btn-primary" href="cpui9/cpui9.html">Xem Chi Tiết →</a>
+
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-6 text-white showcase-img"
+                    style="background-image: url('assets/img/bg-showcase-2.jpg')"></div>
+                <div class="col-lg-6 my-auto showcase-text">
+                    <h2>CPU AMD RYZEN 9</h2>
+                    <p class="lead mb-0">là một thương hiệu nổi tiếng trong việc sản xuất chip cho laptop của mình, bao
+                        gồm dòng chip M1, M2 được trang bị trên các máy tính Macbook.</p>
+                    <p class="lead mb-0"><strong>CPU AMD Ryzen 9</strong> là một trong những loại CPU cao cấp nhất của
+                        AMD được ra mắt năm 2017. CPU này có số lõi từ 12 đến 16 lõi với số luồng từ 24 đến 32 luồng,
+                        tốc độ xung nhịp cơ bản từ 3,5 GHz đến 3,8 GHz, đồng thời có bộ nhớ đệm 70MB và hỗ trợ công nghệ
+                        đa luồng SMT. Ryzen 9 được thiết kế cho các tác vụ yêu cầu độ phức tạp cao như đồ họa, xử lý
+                        video, chơi game và các ứng dụng máy tính chuyên nghiệp. CPU AMD Ryzen 9 có thể hoạt động trên
+                        nền tảng socket AM4 và sử dụng chipset X570 hoặc B550 để tận dụng được tất cả các tính năng của
+                        nó.</p>
+                    <h3 style="color: rgb(245, 11, 11);">13.990.000₫</h3>
+                    <a class="btn btn-primary" href="ryzen9/rezen9.html">Xem Chi Tiết →</a>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img"
+                    style="background-image: url('assets/img/bg-showcase-3.jpg')"></div>
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <h2>CHIP M2 APPLE</h2>
+                    <p class="lead mb-0">là một thương hiệu nổi tiếng trong việc sản xuất chip cho laptop của mình, bao
+                        gồm dòng chip M1, M2 được trang bị trên các máy tính Macbook.</p>
+                    <p class="lead mb-0"> Hiện tại, <strong>Apple</strong> chưa chính thức công bố về việc sẽ phát triển
+                        chip M2 cho Macbook hay không. Tuy nhiên, dựa trên những tin đồn và thông tin rò rỉ, có thể cho
+                        rằng chip M2 sẽ là phiên bản tiếp theo của chip M1, được sản xuất trên tiến trình 5nm hoặc 4nm.
+                        Nó có thể cải thiện hiệu suất so với M1, hỗ trợ nhiều hơn cho kết nối màn hình và RAM và cải
+                        thiện khả năng xử lý đồ họa. Tuy nhiên, Apple chưa xác nhận bất kỳ thông tin nào về chip M2 cho
+                        đến thời điểm này.</p>
+                    <h3 style="color: rgb(245, 11, 11);">11.899.000₫</h3>
+                    <a class="btn btn-primary" href="applem2/applem2.html">Xem Chi Tiết →</a>
+                </div>
+
+            </div>
+            <div class="container-fluid d-flex justify-content-center align-items-center custom-container">
+                <div class="text-center">
+                    <h1>Các dòng Chip CPU thông thường được nhiều người sử dụng.</h1>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-6 text-white showcase-img"
+                    style="background-image: url('assets/img/bg-showcase-4.jpg')"></div>
+                <div class="col-lg-6 my-auto showcase-text">
+                    <h2>Chip Intel Core i5 1135G7</h2>
+                    <p class="lead mb-0">Intel i5 1135G7 hỗ trợ bộ nhớ chuẩn DDR4 với tốc độ đọc 3200 MHz, hỗ trợ người
+                        dùng tốt trong cả việc chơi game hay đa nhiệm nhiều tác vụ cũng đều rất mượt mà nhờ hiệu suất xử
+                        lý vô cùng ổn định.</p>
+                    <p class="lead mb-0">CPU chạy ở xung nhịp cơ sở là 2.4 GHz gấp 1.5 lần so với Core i5 - 10210U của
+                        gen 10 và đạt xung nhịp tối đa là 4.2 GHz nhờ Turbo Boost. Bên cạnh đó, Core i5 - 1135G7 còn
+                        được trang bị thêm bộ nhớ đệm 8 MB Intel Smart Cache, hỗ trợ tối đa 64 GB RAM mang đến khả năng
+                        đa nhiệm tốt rút ngắn thời gian chờ và tăng hiệu suất làm việc của CPU.</p>
+                    <h3 style="color: rgb(245, 11, 11);">5.990.000₫</h3>
+                    <a class="btn btn-primary" href="cpui5/cpui5.html">Xem Chi Tiết →</a>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img"
+                style="background-image: url('assets/img/bg-showcase-5.jpg')"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>CPU AMD Ryzen 5 5600X</h2>
+                <p class="lead mb-0">CPU AMD Ryzen 5 5600X là bộ xử lý được tích hợp nhiều công nghệ tiên tiến nhằm tăng
+                    hiệu suất hoạt động lên mức cao hơn nhiều so với các thế hệ trước. Chúng gồm các công nghệ độc quyền
+                    đến từ AMD như: Kiến trúc lõi "Zen 3"; Công nghệ hỗ trợ lưu trữ "AMD StoreMI Technology"; Công nghệ
+                    hỗ trợ điều khiển "AMD Ryzen Master Utility"; Công nghệ thực tế ảo "AMD Ryzen VR-Ready Premium";...
+                    Tất cả tạo nên 1 con chip máy tính mạnh mẽ, đáp ứng tốt nhiều nhu cầu khác nhau của người dùng.</p>
+                <h3 style="color: rgb(245, 11, 11);">5.200.000₫</h3>
+                <a class="btn btn-primary" href="rezen5/rezen5.html">Xem Chi Tiết →</a>
+            </div>
+        </div>
+    </section>
+    <!-- Nhận xét từ người dùng -->
+    <section class="testimonials text-center bg-light">
+        <div class="container">
+            <h2 class="mb-5">Những Người Sáng Lập Ra Các Dòng CPU</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-1.jpg" alt="..." />
+                        <h5> ông Gordon Moore "Intel"</h5>
+                        <p class="font-weight-light mb-0">"Đồng sáng lập Intel vào năm 1968, ông Moore là một trong
+                            những kỹ sư cuối cùng đã đưa bộ xử lý "Intel Inside" vào hơn 80% máy tính cá nhân trên thế
+                            giới.!"</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-2.jpg" alt="..." />
+                        <h5>Jerry Sanders"ADM"</h5>
+                        <p class="font-weight-light mb-0">"Sanders đã là CEO của AMD từ năm 1969 đến năm 2002, trong
+                            thời gian đó, ông đã giúp AMD trở thành đối thủ cạnh tranh của Intel trong lĩnh vực CPU. Ông
+                            cũng đã thúc đẩy việc phát triển các sản phẩm mới, đặc biệt là trong lĩnh vực vi xử lý và
+                            chipset.."</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-3.jpg" alt="..." />
+                        <h5>Gerard Williams III "Kỹ Sư APPLE"</h5>
+                        <p class="font-weight-light mb-0">"Gerard Williams III là một kỹ sư hàng đầu trong ngành công
+                            nghiệp chip, được biết đến với vai trò quan trọng trong việc phát triển các chip cho Apple,
+                            bao gồm các phiên bản từ A7 đến A12X. Trước đó, ông đã làm việc tại AMD. Sau khi rời Apple,
+                            ông đã đồng sáng lập công ty NUVIA, tập trung vào việc phát triển chip cao cấp cho các thiết
+                            bị di động và máy tính."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="video-container">
+        <div class="video">
+            <video width="300" height="533.33" controls>
+                <source src="assets/video/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video">
+            <video width="300" height="533.33" controls>
+                <source src="assets/video/video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video">
+            <video width="300" height="533.33" controls>
+                <source src="assets/video/video3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    
+    <!-- Lời kêu gọi hành động -->
+    <section class="call-to-action text-white text-center" id="signup">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <h2 class="mb-4">Sẵn sàng bắt đầu? Đăng ký ngay bây giờ để biết thêm nhiều thông tin về cồng nghệ!
+                    </h2>
+                    <!-- Form đăng ký -->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- Biểu mẫu này đã được tích hợp sẵn với SB Forms.-->
+                    <!-- Để biểu mẫu này hoạt động, hãy đăng ký tại-->
+                    <!-- https://startbootstrap.com/solution/contact-forms-->
+                    <!-- để nhận một mã API!-->
+                    <form id="data-form">
+                        <label for="name">Họ và Tên:</label>
+                        <input type="text" id="name" name="entry.2129427184" required><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="entry.1622163584" required><br><br>
+
+                        <button type="button" onclick="submitToGoogleForm()">Gửi</button>
+                    </form>
+    </section>
+    <!-- Chân trang -->
+    <footer class="footer bg-light">
+
+        <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+            <ul class="list-inline mb-0">
+                <li class="list-inline-item me-4">
+                    <a href="#!"><i class="bi-facebook fs-3"></i></a>
+                </li>
+                <li class="list-inline-item me-4">
+                    <a href="#!"><i class="bi-twitter fs-3"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#!"><i class="bi-instagram fs-3"></i></a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        </div>
+    </footer>
+    <script>
+        function submitToGoogleForm() {
+            var name = document.getElementById("name").value; ''
+            var email = document.getElementById("email").value;
+
+            // Thay thế YOUR_FORM_ID bằng ID của Google Form của bạn
+            var googleFormUrl = "https://docs.google.com/forms/d/1fF1vqoItrluHmAAncCBlG0JBDaWV48oh6JQDHy0PJek/edit?";
+
+            // Thêm dữ liệu vào URL của Google Form
+            googleFormUrl += "entry.2129427184" + encodeURIComponent(name) + "&";
+            googleFormUrl += "entry.1622163584" + encodeURIComponent(email);
+
+            // Chuyển hướng đến Google Form với dữ liệu đã thêm
+            window.location.href = googleFormUrl;
+        }
+    </script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Kích hoạt biểu mẫu của bạn tại https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
